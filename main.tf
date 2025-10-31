@@ -9,7 +9,7 @@ terraform {
 
 provider "google" {
 
-  project = "qwiklabs-gcp-01-ed343bfccad5"
+  project = "qwiklabs-gcp-03-fd94a0391124"
   region  = "us-central1"
   zone    = "us-central1-f"
 }
@@ -34,8 +34,4 @@ resource "google_compute_instance" "vm_instance" {
     access_config {
     }
   }
-}
-
-resource "google_compute_address" "vm_static_ip" {
-  name = "terraform-static-ip"
 }
