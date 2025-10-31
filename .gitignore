@@ -1,0 +1,26 @@
+# Terraform-specific files
+# Ignore state files - these contain sensitive data!
+*.tfstate
+*.tfstate.backup
+
+# Ignore local provider plugins and modules
+.terraform/
+
+# Ignore .tfvars files, which contain sensitive variables
+*.tfvars
+*.tfvars.json
+
+# Ignore plan files, as they can also contain sensitive data
+*.tfplan
+
+# Ignore crash log files
+crash.log
+*.log
+
+# Generated output file (from your directory)
+ip_address.txt
+
+# Common OS/Editor files
+.DS_Store
+Thumbs.db
+.vscode/
